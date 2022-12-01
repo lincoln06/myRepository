@@ -1,0 +1,33 @@
+﻿<Window x:Class="MyRepository.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MyRepository"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel Orientation="Horizontal">
+        <StackPanel Orientation="Vertical" x:Name="LeftSideMenu" Margin="10,10,0,0">
+            <Label Content="Wybierz akcję"/>
+            <ComboBox x:Name="ChooseActionCbx">
+                <ComboBoxItem>Dodaj</ComboBoxItem>
+                <ComboBoxItem>Wyszukaj</ComboBoxItem>
+            </ComboBox>
+            <Label Content="Wybierz typ"/>
+            <ComboBox x:Name="ChooseTypeCbx">
+                <ComboBoxItem>Książka</ComboBoxItem>
+                <ComboBoxItem>Uzytkownik</ComboBoxItem>
+            </ComboBox>
+            <Label Content="Źródło danych"/>
+            <ComboBox x:Name="ChooseCrudCbx">
+                <ComboBoxItem>MongoDB</ComboBoxItem>
+                <ComboBoxItem>SQLite</ComboBoxItem>
+            </ComboBox>
+            <Button x:Name="OkBtn" Margin="0,10,0,0">OK</Button>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" x:Name="UserCommunicationPanel">
+            
+        </StackPanel>
+        
+    </StackPanel>
+</Window>
